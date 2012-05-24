@@ -1,0 +1,449 @@
+@charset "utf-8";
+/* CSS Document */
+/*General CSS structure and layout*/
+/*---------------------------------------------------------------------------
+----------Default styles----------
+
+1. typography and other common styles
+2. basic columns and margin adjust classes
+3. image styles
+
+----------Index page styles----------
+5. wrapper
+	5.1 header_top
+	5.2 header
+			- text
+			- subscribe
+	5.3 slideshow
+			- slider
+	5.4 speakers
+			- three columns for speakers
+	5.5 agenda
+			- tables
+	5.6 sub_footer
+			- partners / gallery
+			- social
+			- contact info
+	5.7 footer
+			- copyright
+--------------------------------------------------------------------------*/
+body {
+	background: url(../images/body-bg.jpg) repeat #332c2e fixed;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #454242;
+	line-height: 1.6em;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+/*1.typography and other common styles/
+/*---------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5 {
+	color: #363232;
+	line-height: 1em;
+	font-weight: normal;
+}
+h1 {
+	font-size: 38px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+h2 {
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+h3 {
+	font-size: 22px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+h4 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+h5 {
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+a {
+	color: #454242;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
+}
+.clear {
+	clear:both;
+}
+span {
+	color: #a8531e;
+}
+.sub_heading {
+	font-size: 12px;
+	color: #958f8f;
+	font-style: italic;
+	text-align: center;
+}
+/*2.basic columns and margin adjust classes*/
+/*---------------------------------------------------------------------------*/
+/*two columns*/
+.column_2 {
+	width: 370px;
+	margin-right: 20px;
+	float: left;
+}
+/*three columns*/
+.column_3 {
+	width: 240px;
+	margin-right: 20px;
+	float: left;
+}
+/*four columns*/
+.column_4 {
+	width: 175px;
+	margin-right: 20px;
+	float: left;
+}
+/*twothird and onethird columns*/
+.column_onethird {
+	width: 240px;
+	margin-right: 20px;
+	float: left;
+}
+.column_twothird {
+	width: 500px;
+	float: left;
+}
+/*-----margin adjust classes-----*/
+.alpha {
+	margin-right: 0px !important;
+}
+.omega {
+	margin-left: 0px !important;
+}
+.beta {
+	margin-bottom: 0px !important;
+}
+/*3.image styles*/
+/*---------------------------------------------------------------------------*/
+/*all image styles given here are not used in template, 
+some additional styles are given if you need to use while customization*/
+.image_left {
+	float: left;
+	margin-right: 10px;
+}
+.image_right {
+	float: right;
+	margin-left: 10px;
+}
+/*----------------------------------------*/
+/*Index page style*/
+/*----------------------------------------*/
+/*5.wrapper/
+/*---------------------------------------------------------------------------*/
+#wrapper {
+	width: 760px;
+	background:url(../images/pattern.jpg) repeat #f3f2f1;
+	padding: 30px 20px;
+	margin: 0 auto;
+	border-left: 3px solid #ffffff;
+	border-right: 3px solid #ffffff;
+}
+/*5.1 header_top/
+/*---------------------------------------------------------------------------*/
+#header_top {
+	width: 760px;
+	background: url(../images/divider.jpg) repeat-x center bottom;
+	padding-bottom: 30px;
+	text-align: center;
+	float: left;
+}
+p.date {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+p.venue {
+	font-size: 12px;
+	font-style: italic;
+	line-height: 1.2em;
+}
+/*5.2 header/
+/*---------------------------------------------------------------------------*/
+#header {
+	width: 760px;
+	background: url(../images/divider.jpg) repeat-x center bottom;
+	padding: 30px 0px;
+	float: left;
+}
+/*----------text----------*/
+.text {
+	width: 450px;
+	margin-right: 20px;
+	float: left;
+}
+.text p {
+	padding-bottom: 10px;
+}
+.text h4 {
+	margin-bottom: 0px;
+}
+/*list with bullet*/
+ul.bullet {
+	padding-top: 5px;
+}
+ul.bullet li {
+	background: url(../images/bullet-checkmark.png) no-repeat 0 6px;
+	padding-left: 23px;
+	font-style: italic;
+	line-height: 2em;
+	list-style: none;
+}
+/*----------subscribe----------*/
+.subscribe_bg {
+	width: 270px;
+	padding: 9px;
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: none;
+	float: left;
+}
+.subscribe {
+	padding: 30px;
+	background: url(../images/form-bg-pattern.jpg) repeat #c4c4bd;
+}
+.subscribe h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-style: italic;
+}
+/*subscribe form*/
+form#subform fieldset {
+	border: none;
+	background: none;
+}
+form#subform fieldset p {
+	background: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+form#subform input {
+	background: url(../images/sub-input.png) no-repeat;
+	width: 198px;
+	height: 20px;
+	padding: 5px;
+	margin: 0px 0px 10px 0px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #8a8a8a;
+	font-size: 12px;
+	line-height: 1.6em;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	outline: none;
+}
+form#subform input.sub_submit {
+	background: url(../images/register-btn.png) no-repeat 0 0;
+	width: 210px;
+	height: 36px;
+	margin: 5px 0px 0px 0px;
+	padding: 0;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: block;
+}
+/*label.error is not used for this template*/
+form#subform label.error {
+	font-size: 0px;
+	display: none !important;
+}
+form#subform input.error {
+	border: 1px solid #f7a8a8;
+}
+/*5.3 slideshow/
+/*---------------------------------------------------------------------------*/
+#slideshow {
+	width: 760px;
+	background: url(../images/divider.jpg) repeat-x center bottom;
+	padding: 30px 0px;
+	float: left;
+}
+#slider_bg {
+	width: 740px;
+	padding: 9px;
+	margin-top: 20px;
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+	border-radius: 3px;
+}
+#slider {
+	width: 740px;
+	height:280px;
+}
+/*5.4 speakers/
+/*---------------------------------------------------------------------------*/
+#speakers {
+	width: 760px;
+	background: url(../images/divider.jpg) repeat-x center bottom;
+	padding: 30px 0px 20px 0px;
+	text-align: center;
+	float: left;
+}
+.speaker_bg {
+	background: url(../images/speaker-photo-bg.png) no-repeat;
+	width: 100px;
+	height: 100px;
+	padding: 11px;
+	margin: 20px auto 0px auto;
+}
+p.info {
+	font-size: 12px;
+	color: #454242;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1.3em;
+	padding: 10px 0px;
+}
+#speakers a {
+	color: #a8531e;
+}
+/*5.5 agenda/
+/*---------------------------------------------------------------------------*/
+#agenda {
+	width: 760px;
+	background: url(../images/divider.jpg) repeat-x center bottom;
+	padding: 30px 0px;
+	float: left;
+}
+table {
+	border-collapse:collapse;
+	width: 364px;
+	float: left;
+}
+td {
+	padding: 5px;
+	line-height: 1.4em;
+}
+.table_1 {
+	width: 364px;
+	padding-right: 15px;
+	text-align: right;
+	float: left;
+}
+.table_2 {
+	width: 364px;
+	padding-left: 15px;
+	text-align: left;
+	float: left;
+}
+.table_1 h4 {
+	font-size: 16px;
+	color: #a8531e;
+	margin: 15px 5px 15px 0px;
+}
+.table_2 h4 {
+	font-size: 16px;
+	color: #a8531e;
+	margin: 15px 0px 15px 5px;
+}
+.divider_vert {
+	background: url(../images/vertical-divider.jpg) repeat-y;
+	width: 2px;
+	height: 215px;
+	margin-top: 15px;
+	float: left;
+}
+/*5.6 sub_footer/
+/*---------------------------------------------------------------------------*/
+#sub_footer {
+	width: 760px;
+	background: url(../images/divider.jpg) repeat-x center bottom;
+	padding: 30px 0px;
+	float: left;
+}
+#sub_footer p {
+	padding-bottom: 15px;
+}
+/*----------partners / gallery----------*/
+ul.gallery li {
+	width: 95px;
+	height: 60px;
+	padding: 9px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: #ffffff;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	list-style: none;
+	float: left;
+}
+/*----------social----------*/
+.twitt_user {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	color: #a8531e;
+	font-style: italic;
+	padding-bottom: 10px;
+	display: block;
+}
+#twitter ul li {
+	background: none;
+	list-style: none;
+	font-size: 12px;
+	margin: 0px 0px 10px 0px;
+	padding: 0;
+	display: block;
+}
+#twitter ul li span {
+	color: #454242;
+}
+a.bird {
+	background: url(../images/twitter-bird.png) no-repeat right;
+	padding-right: 30px;
+}
+/*5.7 footer/
+/*---------------------------------------------------------------------------*/
+#footer {
+	width: 760px;
+	padding: 20px 0px;
+	font-size: 11px;
+	line-height: 1.3em;
+	text-align: center;
+	float: left;
+}
+
+
+/*lobster font family*/
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lobster'), url('/fonts/lobster.woff') format('woff');
+}
+
+
+.mycolor {
+	color : #A8531E;
+}
+
+.myfont {
+	font-family: 'Lobster', cursive;
+}
