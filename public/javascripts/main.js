@@ -47,8 +47,4 @@ $(document).ready(function(){
 		}
 	);
 
-	// google custom eventa
-	$("#register-link").click(function(){
-		_trackEvent("user_interactions", "click:register");
-	});
 });
