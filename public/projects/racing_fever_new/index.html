@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+body
+{
+
+overflow-x: hidden;
+overflow-y: hidden;
+
+
+background-repeat:no-repeat;
+}
+
+#minimapdiv
+{
+position: absolute;
+top: 50; left: 50;
+z-index: 10;
+text-align:center;
+font-weight:bold;
+width:200px;
+height:175px;
+}
+
+#speedometerdiv
+{
+position: absolute;
+top: 500; left: 50;
+z-index: 10;
+text-align:center;
+font-weight:bold;
+width:200px;
+height:200px;
+}
+
+#posimg
+{
+position: relative;
+z-index: 11;
+
+}
+
+#needle
+{
+position: relative;
+z-index: 11;
+
+}
+</style>
+
+</head>
+
+<body onkeydown="keydown(event);" onkeyup="keyup(event);" bgcolor="#c0c0c0" >
+
+
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+To start  press F11 and click 
+ <script type="text/javascript" src="jQueryRotate.js"></script>
+
+
+<div id="cardiv"  style="left: 1428px; top: 2328px; position: absolute; z-index:100">
+<img  src="car2.png" id="car"  height=30 width=60 >
+</div>
+
+<!--
+
+<script type="text/javascript">
+$(window).scroll(function()
+{
+  $('#mydiv').animate({top:$(window).scrollTop()+screen.height-200+"px" },{queue: false, duration: 0});
+  $('#mydiv').animate({left:$(window).scrollLeft()+"px" },{queue: false, duration: 0});	
+//alert(screen.height+ "   "+ screen.availHeight);
+});
+</script>
+
+-->
+
+<script type="text/javascript" src="script.js"></script>
+<a href="#" onclick="timing();" > start</a>
+<div id="detailsdiv"></div>
+<br>
+<div id="angle"></div>
+
+<img src="race_track1.jpg" >
+<img src="race_track2.jpg" >
+
+
+
+
+<img  src="ball.gif" id="tail1" style="left: 0px;top: 0px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail2" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail3" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail4" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail5" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail6" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail7" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail8" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail9" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" id="tail0" style="left: 60px;top: 160px; position: absolute; z-index:10"/>
+<img  src="ball.gif" style="left: 10000px;top: 10000px; position: absolute; z-index:10"/>
+
+
+<div id="img"></div>
+
+<div id="minimapdiv">
+<img src="miniball.png" id="posimg"><img src="track_mini.png">
+</div>
+
+<div id="speedometerdiv">
+<img src="needle.png" id="needle"><img src="speedometer.png">
+</div>
+
+</body>
+</html>
