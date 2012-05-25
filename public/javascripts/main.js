@@ -38,7 +38,7 @@ $(document).ready(function(){
 	// text field toggle
 	$(".text").hover(
 		function(){
-			$("#about-text").animate({height : "270px"});
+			$("#about-text").animate({height : "300px"});
 			$("#learn-text").animate({height : "180px"});
 		}
 		, function(){
@@ -47,4 +47,8 @@ $(document).ready(function(){
 		}
 	);
 
+	// google custom eventa
+	$("#register-link").click(function(){
+		_trackEvent("user_interactions", "click:register");
+	});
 });
