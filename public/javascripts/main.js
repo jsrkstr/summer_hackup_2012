@@ -34,4 +34,17 @@ $(document).ready(function(){
 		}
 	});
 
+
+	// text field toggle
+	$(".text").hover(
+		function(){
+			$("#about-text").animate({height : "270px"});
+			$("#learn-text").animate({height : "180px"});
+		}
+		, function(){
+			$("#about-text").animate({height : "145px"});
+			$("#learn-text").animate({height : "100px"});
+		}
+	);
+
 });

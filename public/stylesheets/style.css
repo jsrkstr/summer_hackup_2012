@@ -180,7 +180,7 @@ p.venue {
 }
 /*----------text----------*/
 .text {
-	width: 450px;
+	width: 520px;
 	margin-right: 20px;
 	float: left;
 }
@@ -203,7 +203,7 @@ ul.bullet li {
 }
 /*----------subscribe----------*/
 .subscribe_bg {
-	width: 270px;
+	width: 200px;
 	padding: 9px;
 	background: #ffffff;
 	border: 1px solid #e0e0e0;
@@ -334,7 +334,7 @@ p.info {
 }
 table {
 	border-collapse:collapse;
-	width: 364px;
+	/*width: 364px;*/
 	float: left;
 }
 td {
@@ -342,34 +342,19 @@ td {
 	line-height: 1.4em;
 }
 .table_1 {
-	width: 364px;
+	/*width: 364px;*/
 	padding-right: 15px;
-	text-align: right;
+	/*text-align: right;*/
 	float: left;
+	margin-left : 200px;
 }
-.table_2 {
-	width: 364px;
-	padding-left: 15px;
-	text-align: left;
-	float: left;
-}
+
 .table_1 h4 {
 	font-size: 16px;
 	color: #a8531e;
 	margin: 15px 5px 15px 0px;
 }
-.table_2 h4 {
-	font-size: 16px;
-	color: #a8531e;
-	margin: 15px 0px 15px 5px;
-}
-.divider_vert {
-	background: url(../images/vertical-divider.jpg) repeat-y;
-	width: 2px;
-	height: 215px;
-	margin-top: 15px;
-	float: left;
-}
+
 /*5.6 sub_footer/
 /*---------------------------------------------------------------------------*/
 #sub_footer {
@@ -396,30 +381,7 @@ ul.gallery li {
 	list-style: none;
 	float: left;
 }
-/*----------social----------*/
-.twitt_user {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 24px;
-	color: #a8531e;
-	font-style: italic;
-	padding-bottom: 10px;
-	display: block;
-}
-#twitter ul li {
-	background: none;
-	list-style: none;
-	font-size: 12px;
-	margin: 0px 0px 10px 0px;
-	padding: 0;
-	display: block;
-}
-#twitter ul li span {
-	color: #454242;
-}
-a.bird {
-	background: url(../images/twitter-bird.png) no-repeat right;
-	padding-right: 30px;
-}
+
 /*5.7 footer/
 /*---------------------------------------------------------------------------*/
 #footer {
@@ -453,4 +415,18 @@ a.bird {
 .attending-picture {
 	width : 32px;
 	height : 32px;
+}
+
+#about-text {
+	height: 145px;
+	overflow: hidden;
+}
+
+#learn-text {
+	height: 100px;
+	overflow: hidden;
+}
+
+.mylink {
+	color : #A8531E;
 }
