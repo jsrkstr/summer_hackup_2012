@@ -415,6 +415,7 @@ ul.gallery li {
 .attending-picture {
 	width : 32px;
 	height : 32px;
+	padding : 1px;
 }
 
 #about-text {
@@ -429,4 +430,8 @@ ul.gallery li {
 
 .mylink {
 	color : #A8531E;
+}
+
+.fb-like {
+	margin-top : 10px;
 }

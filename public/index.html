@@ -36,6 +36,20 @@
     </head>
     
     <body>
+
+        <!-- fb like button -->
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=335954993099602";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- fb like button -->
+
         <!--wrappper starts-->
         <div id="wrapper">
             <!--header_top starts-->
@@ -104,6 +118,8 @@
                                 <img src="/images/join-button.png">
                             </a>
                             <div id="attending"></div>
+                            <div class="fb-like" data-href="http://hackup.heroku.com/" data-send="true" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+
                         </div>
                         <!--sub_inner ends-->
                     </div>
