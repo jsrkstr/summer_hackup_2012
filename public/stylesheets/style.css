@@ -214,8 +214,9 @@ ul.bullet li {
 	float: left;
 }
 .subscribe {
-	padding: 30px;
-	background: url(../images/form-bg-pattern.jpg) repeat #c4c4bd;
+	padding: 15px;
+	/*background: url(../images/form-bg-pattern.jpg) repeat #c4c4bd;*/
+	background-color : #EFEFEF;
 }
 .subscribe h3 {
 	font-size: 20px;
@@ -446,4 +447,10 @@ a.bird {
 
 .myfont {
 	font-family: 'Lobster', cursive;
+}
+
+
+.attending-picture {
+	width : 32px;
+	height : 32px;
 }

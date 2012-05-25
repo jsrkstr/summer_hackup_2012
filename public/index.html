@@ -4,6 +4,11 @@
     <!--Attached CSS files here-->
     <link rel="stylesheet" href="/stylesheets/reset.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/vendor/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/vendor/nivo-slider/nivo-slider.css">
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+    <script type="text/javascript" src="/vendor/nivo-slider/jquery.nivo.slider.pack.js"></script>
 <!--     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
  -->
     </head>
@@ -18,7 +23,7 @@
                 <p class="venue">NEW DELHI, INDIA</p>
                 <div class="clear"></div>
             </div>
-            <!--header_top ends-->
+            <!--heade`r_top ends-->
             <!--header starts-->
             <div id="header">
                 <!--text starts-->
@@ -38,23 +43,11 @@
                     <div class="subscribe">
                         <!--sub_inner starts-->
                         <div class="sub_inner">
-                            <h3>Register Today!</h3>
-                            <form id="subform" method="post">
-                                <fieldset>
-                                    <p>
-                                        <input name="name" onfocus="if (this.value == &#39;Name&#39;) {this.value = &#39;&#39;;}"
-                                        onblur="if (this.value == &#39;&#39;) {this.value = &#39;Name&#39;;}" value="Name">
-                                    </p>
-                                    <p>
-                                        <input name="email" onfocus="if (this.value == &#39;Email&#39;) {this.value = &#39;&#39;;}"
-                                        onblur="if (this.value == &#39;&#39;) {this.value = &#39;Email&#39;;}"
-                                        value="Email" class="required email">
-                                    </p>
-                                    <p>
-                                        <input class="sub_submit" type="submit" value="Continue registering">
-                                    </p>
-                                </fieldset>
-                            </form>
+                            <center><h4 class="myfont">Register Now!</h4></center>
+                            <a href="#" title="Click to register">
+                                <img src="/images/join-button.png">
+                            </a>
+                            <div id="attending"></div>
                         </div>
                         <!--sub_inner ends-->
                     </div>
@@ -66,12 +59,17 @@
             <!--header ends-->
             <!--slideshow starts-->
             <div id="slideshow">
-                <h3 class="myfont">Take a look at our previous workshop</h3>
+                <h3 class="myfont">Take a look at our portfolio</h3>
                 <p class="sub_heading">held at Ipsum Conference Hall, Diego Bay, PO</p>
                 <!--slider_bg starts-->
-                <div id="slider_bg">
+                <div id="slider_bg" class="slider-wrapper theme-default">
                     <!--remember to specify height and width of slider images-->
-                    <div id="slider" class="nivoSlider"></div>
+                    <div id="slider" class="nivoSlider">
+                        <img src="images/slide-1.jpg" alt="" />
+                        <a href="http://dev7studios.com"><img src="images/slide-2.jpg" alt="" title="This is an example of a caption" /></a>
+                        <img src="images/slide-3.jpg" alt="" data-transition="slideInLeft" />
+                        <img src="images/slide-2.jpg" alt="" title="#htmlcaption" />
+                    </div>
                 </div>
                 <!--slider_bg ends-->
                 <div class="clear"></div>
